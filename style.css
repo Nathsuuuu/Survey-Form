@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://images.pexels.com/photos/669582/pexels-photo-669582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 20px;
+}
+
+#title {
+  text-align: center;
+  color: #333;
+}
+
+#description {
+  text-align: center;
+  color: #666;
+}
+
+#survey-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+  max-width: 600px;
+  margin: auto;
+  position: relative; /* Ensure the form is positioned relatively */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+#hover-img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  border-radius: 50%; /* Make it circular */
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0);
+}
+
+#hover-img:hover {
+  transform: scale(1);
+}
