@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Gym Feedback Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Gym Feedback Form</h1>
+  <p id="description">Please fill out this form to help us improve our gym services.</p>
+  
+  <form id="survey-form">
+    <!-- Name input -->
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+    
+    <!-- Email input -->
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+    
+    <!-- Number input -->
+    <label id="number-label" for="number">Age (optional):</label>
+    <input id="number" type="number" placeholder="Enter your age" min="1" max="120">
+    
+    <!-- Dropdown menu -->
+    <label for="dropdown">How do you rate our gym?</label>
+    <select id="dropdown" required>
+      <option value="" disabled selected>Select an option</option>
+      <option value="excellent">Excellent</option>
+      <option value="good">Good</option>
+      <option value="fair">Fair</option>
+      <option value="poor">Poor</option>
+    </select>
+    
+    <!-- Radio buttons -->
+    <fieldset>
+      <legend>Which types of workouts do you prefer?</legend>
+      <label><input type="radio" name="preference" value="strength" required> Strength Training</label>
+      <label><input type="radio" name="preference" value="cardio"> Cardio</label>
+      <label><input type="radio" name="preference" value="flexibility"> Flexibility & Yoga</label>
+    </fieldset>
+    
+    <!-- Checkboxes -->
+    <fieldset>
+      <legend>Select the gym facilities you use:</legend>
+      <label><input type="checkbox" name="facilities" value="weights"> Weights Area</label>
+      <label><input type="checkbox" name="facilities" value="pool"> Swimming Pool</label>
+      <label><input type="checkbox" name="facilities" value="classes"> Group Classes</label>
+    </fieldset>
+    
+    <!-- Textarea for additional comments -->
+    <label for="comments">Any comments or suggestions?</label>
+    <textarea id="comments" placeholder="Enter your comments here"></textarea>
+    
+    <!-- Submit button -->
+    <button id="submit" type="submit">Submit</button>
+    
+    <!-- Hover image -->
+    <img id="hover-img" src="https://via.placeholder.com/100" alt="Hover Image" class="hover-img">
+  </form>
+</body>
+</html>
